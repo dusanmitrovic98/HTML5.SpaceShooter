@@ -1,0 +1,58 @@
+body {
+  overflow: hidden;
+}
+
+.background {
+  position: relative;
+  top: -10px;
+  left: -100px;
+  z-index: 0;
+}
+
+.playerContainer {
+  /* background-color: blue; */
+  position: absolute;
+  width: 99px;
+  height: 100px;
+  /* opacity: 0.5; */
+}
+
+.spaceShip {
+  /* background-color: red; */
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  /* opacity: 0.5; */
+  z-index: 3;
+}
+
+.engineFire {
+  position: absolute;
+  left: 42.5px;
+  top: 55.5px;
+  z-index: 2;
+}
+
+.projectile {
+  position: fixed;
+  animation: moveUp 0.5s linear infinite;
+  top: 1000px;
+  left: 44.5px;
+  width: 10px;
+  height: 20px;
+  z-index: 1;
+}
+
+.cannon {
+  position: relative;
+  top: 10px;
+}
+
+@keyframes moveUp {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -500px;
+  }
+}
